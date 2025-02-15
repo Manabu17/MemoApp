@@ -6,36 +6,37 @@ const Index = (): JSX.Element => {
 
             <View style={styles.header}>
                 <View style={styles.headerInner}>
-                    <Text style={styles.headerTitle}>Memo App</Text>
+                    <Text style={styles.headerTitle}>FarmLand App</Text>
                     <Text style={styles.headerRight}>ログアウト</Text>
                 </View>
             </View>
 
             <View>
-                <View>
+
+                <View style={styles.memoListItem}>
                     <View>
-                        <Text>買い物リスト</Text>
-                        <Text>2025年2月15日 14:00</Text>
+                        <Text style={styles.memoListItemTitle}>買い物リスト</Text>
+                        <Text style={styles.memoListItemDate}>2025年2月15日 14:00</Text>
                     </View>
                     <View>
                         <Text>X</Text>
                     </View>
                 </View>
 
-                <View>
+                <View style={styles.memoListItem}>
                     <View>
-                        <Text>買い物リスト</Text>
-                        <Text>2025年2月15日 14:00</Text>
+                        <Text style={styles.memoListItemTitle}>買い物リスト</Text>
+                        <Text style={styles.memoListItemDate}>2025年2月15日 14:00</Text>
                     </View>
                     <View>
                         <Text>X</Text>
                     </View>
                 </View>
 
-                <View>
+                <View style={styles.memoListItem}>
                     <View>
-                        <Text>買い物リスト</Text>
-                        <Text>2025年2月15日 14:00</Text>
+                        <Text style={styles.memoListItemTitle}>買い物リスト</Text>
+                        <Text style={styles.memoListItemDate}>2025年2月15日 14:00</Text>
                     </View>
                     <View>
                         <Text>X</Text>
@@ -57,7 +58,7 @@ const styles = StyleSheet.create({
       
     },
     header: {
-        backgroundColor: '#467FD3',
+        backgroundColor: '#8646D3',
         height: 104,
         justifyContent: 'flex-end'
         
@@ -77,7 +78,26 @@ const styles = StyleSheet.create({
         lineHeight: 32,
         fontWeight: 'bold',
         color: '#ffffff'
-    }
+    },
+    memoListItem: {
+        backgroundColor: '#ffffff',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        paddingVertical: 16,
+        paddingHorizontal: 19,
+        alignItems: 'center',
+        borderBottomWidth: 1,
+        borderColor: 'rgba(0,0,0,0.15'
+    },
+    memoListItemTitle: {
+        fontSize: 16,
+        lineHeight: 32
+    },
+    memoListItemDate: {
+    fontSize: 12,
+    lineHeight: 16,
+    color: '#848484'
+}
 })
 
 export default Index
