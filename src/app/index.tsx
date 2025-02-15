@@ -96,7 +96,7 @@ const styles = StyleSheet.create({
     memoListItemDate: {
     fontSize: 12,
     lineHeight: 16,
-    color: '#848484'
+    color: '#848484',
 }
 })
 
