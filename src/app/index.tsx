@@ -6,7 +6,7 @@ const Index = (): JSX.Element => {
 
             <View style={styles.header}>
                 <View style={styles.headerInner}>
-                    <Text style={styles.headerTitle}>FarmLand App</Text>
+                    <Text style={styles.headerTitle}>Memo App</Text>
                     <Text style={styles.headerRight}>ログアウト</Text>
                 </View>
             </View>
@@ -44,8 +44,9 @@ const Index = (): JSX.Element => {
                 </View>
 
             </View>
-            <View>
-                <Text>+</Text>
+
+            <View style={styles.circleButton}>
+                <Text style={styles.circleButtonLabel}>+</Text>
             </View>
         </View>
     )
@@ -96,8 +97,22 @@ const styles = StyleSheet.create({
     memoListItemDate: {
     fontSize: 12,
     lineHeight: 16,
-    color: '#848484',
-}
+    color: '#848484'
+    },
+    circleButton: {
+      width: 64,
+      height: 64,
+      borderRadius: 32,
+      backgroudColor: '#8646D3',
+      justifyContent: 'center',
+      alignItems: 'center'
+    },
+    circleButtonLabel: {
+      color: '#ffffff',
+      fontSize: 40,      
+
+    }
+
 })
 
 export default Index
